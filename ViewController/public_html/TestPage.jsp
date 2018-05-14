@@ -15,7 +15,7 @@
                 <h:panelGroup layout="span">
                     <h:inputText value="#{MagicText.inputText}"/>
                     <h:commandButton value="------------>" action="#{MagicText.commandButton_action}"/>
-                    <h:outputText value="#{MagicText.oututText}"/>
+                    <h:outputText value="#{MagicText.outputText}"/>
                 </h:panelGroup>
             </h:form>
         </body>

@@ -9,11 +9,12 @@ import javax.faces.component.html.HtmlOutputText;
 public class Test2 {
     private HtmlOutputText magicText;
     private String inputText;
-    private String oututText;
+    private String outputText;
     
 
     public Test2() {
-        oututText = "Hello World!";
+        outputText = "Hello World!";
+        inputText = "New text";
     }
 
     public void setMagicText(HtmlOutputText magicText) {
@@ -33,17 +34,17 @@ public class Test2 {
         return inputText;
     }
 
-    public void setOututText(String oututText) {
-        this.oututText = oututText;
+    public void setOutputText(String oututText) {
+        this.outputText = oututText;
     }
 
-    public String getOututText() {
-        return oututText;
+    public String getOutputText() {
+        return outputText;
     }
 
     public Object commandButton_action() {
         // Add event code here...
-        setOututText(getInputText());
+        setOutputText(getInputText());
         return null;
     }
 }
