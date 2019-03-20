@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="geronimo-annotation_1.3_spec-1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../openwebbeans-distribution-2.0.7/api/geronimo-annotation_1.3_spec-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../openwebbeans-distribution-2.0.7/api/geronimo-atinject_1.0_spec-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../openwebbeans-distribution-2.0.7/api/geronimo-el_2.2_spec-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../openwebbeans-distribution-2.0.7/api/geronimo-interceptor_1.2_spec-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../openwebbeans-distribution-2.0.7/api/geronimo-jcdi_2.0_spec-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../openwebbeans-distribution-2.0.7/spi/openwebbeans-spi-2.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../openwebbeans-distribution-2.0.7/openwebbeans-impl-2.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../openwebbeans-distribution-2.0.7/xbean-asm6-shaded-4.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../openwebbeans-distribution-2.0.7/xbean-finder-shaded-4.9.jar!/" />
+      <root url="jar://E:/oracle/jdbc/lib/ojdbc8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

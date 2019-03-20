@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javaee-api-7.0-1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../apache-tomee-plus-7.1.0/lib/javaee-api-7.0-1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

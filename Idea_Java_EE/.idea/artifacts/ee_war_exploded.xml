@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ee:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ee_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ee/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ee" />
+          <element id="jpa-descriptors" facet="ee/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="geronimo-annotation_1.3_spec-1.0" />
+          <element id="library" level="project" name="ojdbc8" />
+          <element id="library" level="project" name="eclipselink" />
+          <element id="library" level="project" name="javaee-api-7.0-1" />
+          <element id="library" level="project" name="jsp-api" />
+          <element id="library" level="project" name="servlet-api" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
