@@ -20,7 +20,17 @@
         </session-timeout>
     </session-config>
 
+    <!--<servlet>-->
+        <!--<servlet-name>user_reg</servlet-name>-->
+        <!--<servlet-class>app.servlets.UserRegForm</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>user_reg</servlet-name>-->
+        <!--<url-pattern>/user_reg</url-pattern>-->
+    <!--</servlet-mapping>-->
+
     <welcome-file-list>
-        <welcome-file>index.xhtml</welcome-file>
+        <!--<welcome-file>index.xhtml</welcome-file>-->
+        <welcome-file>views/Lobby.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
