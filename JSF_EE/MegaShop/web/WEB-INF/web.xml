@@ -20,6 +20,10 @@
         </session-timeout>
     </session-config>
 
+    <mime-mapping>
+        <extension>css</extension>
+        <mime-type>text/css</mime-type>
+    </mime-mapping>
     <!--<servlet>-->
         <!--<servlet-name>user_reg</servlet-name>-->
         <!--<servlet-class>app.servlets.UserRegForm</servlet-class>-->
@@ -31,6 +35,7 @@
 
     <welcome-file-list>
         <!--<welcome-file>index.xhtml</welcome-file>-->
-        <welcome-file>views/Lobby.jsp</welcome-file>
+        <!--<welcome-file>views/Lobby.jsp</welcome-file>-->
+        <welcome-file>views/StartPage.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

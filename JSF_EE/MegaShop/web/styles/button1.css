@@ -38,6 +38,7 @@
     display: block;
     font-size: 30px;
     text-shadow: 0px -1px 1px #80ab5d;
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
 }
 .a-btn-text small{
     display: block;
@@ -73,6 +74,8 @@
     box-shadow:
             0px 1px 1px rgba(255,255,255,0.8) inset,
             1px 1px 5px rgba(0,0,0,0.4);
+    text-decoration: underline; /* Добавляем подчеркивание
+                                   при наведении курсора мыши на ссылку */
 }
 .a-btn:hover img{
     transform: scale(10);

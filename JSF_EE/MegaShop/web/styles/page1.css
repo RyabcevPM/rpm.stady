@@ -1,0 +1,272 @@
+.header, .sidebar, .footer, .filter {
+    /*padding: 8px; !* Поля *!*/
+    border: solid 1px #000; /* Параметры рамки */
+    /*background: linear-gradient(to right, rgba(210, 236, 241, 0.7), rgba(233, 236, 241, 0.49));*/
+    background: linear-gradient(to right, #e2e2e2, #EEEEEE);
+    box-shadow: 0 0 3px;
+    font-family: "Calibri";
+    /*font-family: "Lucida Console";*/
+
+}
+.header { /* Верхняя часть с заголовком */
+    /*background: linear-gradient(to right, #dcebf7, #EEEEEE);*/
+    height: 116px;
+    padding: 0px;
+}
+.header-logo{
+    /*align: top;*/
+    width: 300px;
+    height: 116px;
+    /*text-align: center;*/
+    vertical-align: top;
+    horiz-align: left;
+    padding: 0px;
+}
+.header-logo2{
+    /*align: top;*/
+    width: 160px;
+    height: 116px;
+    /*text-align: center;*/
+    vertical-align: top;
+    horiz-align: center;
+    padding: 0px;
+}
+.header-logo2{
+    /*align: top;*/
+    height: 116px;
+    /*text-align: center;*/
+    vertical-align: top;
+    horiz-align: left;
+    padding: 0px;
+}
+.header-reg{
+    /*padding: 7px; !* Поля *!*/
+    width: 80px;
+    height: 100%;
+    /*vertical-align: middle;*/
+}
+.header-reg form {
+  align-items: center;
+}
+.header-contact{
+    font-size: 24px; /* Размер шрифта */
+    padding: 0px; /* Поля */
+    margin: 0px 0; /* Отступы сверху и снизу */
+    align: center;
+    /*border-radius: 15px;*/
+    width: 270px;
+}
+.header-contact ul{
+    list-style: none; /* Убираем маркеры */
+    padding: 5px; /* Убираем отступы */
+    /*border-radius: 10px;*/
+    font-size: 18px;
+    /*--line-height: 1.428571429;*/
+
+}
+.header-find{
+    align: center;
+    text-align: left;
+    alignment: left;
+    font-size: 16px;
+    align-content: left;
+    width: 400px;
+    horiz-align: left;
+    padding: 5px; /* Убираем отступы */
+}
+
+.layout {
+    margin: 15px 0; /* Отступы сверху и снизу */
+    overflow: hidden; /* Отменяем действие float */
+    min-width: 800px; /* Минимальная ширина */
+    /*max-width: 1200px; !* Максимальная ширина *!*/
+}
+.sidebar { /* Навигация по сайту */
+    width: 200px; /* Ширина меню */
+    float: left; /* Состыковка с другим слоем по горизонтали */
+    /*border-radius: 10px;*/
+}
+.sidebar form{ /* Навигация по сайту */
+    margin: 0 auto;
+    border: none;
+}
+.sidebar ul {
+    list-style: none; /* Убираем маркеры */
+    padding: 0; /* Убираем отступы */
+    /*border-radius: 10px;*/
+}
+.search {
+    /* устанавливаем необходимую ширину формы в зависимости от дизайна
+    ** форма без проблем растягивается */
+    width: 92%;
+
+    /* кнопку отправки будем позиционировать абсолютно,
+    ** поэтому необходимо это свойство */
+    position: relative;
+    padding: 5px;
+}
+
+.search input {
+    /* отключаем бордюры у инпутов */
+    border: none;
+}
+
+/* стили для поля ввода */
+.search .input {
+    /* растягиваем поле ввода на всю ширину формы */
+    width: 100%;
+
+    /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+    ** регулируем высоту формы
+    ** внутренний отступ справа (37px) делаем больше левого,
+    ** т.к. там будет размещена кнопка отправки	*/
+    padding: 8px 37px 9px 15px;
+
+    /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* добавляем внутренние тени */
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+
+    /* закругляем углы */
+    border-radius: 20px;
+
+    background: #EEE;
+    font: 13px Tahoma, Arial, sans-serif;
+    color: #555;
+    outline: none;
+}
+
+/* меняем оформление поля ввода при фокусе */
+.search .input:focus {
+    box-shadow: inset 0 0 8px #FA6A2E, inset 0 1px 2px #FA6A2E;
+    /*box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);*/
+    background: #E8E8E8;
+    color: #333;
+}
+
+/* оформляем кнопку отправки */
+.search .submit {
+    /* позиционируем кнопку абсолютно от правого края формы */
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 37px;
+
+    /* растягиваем кнопку на всю высоту формы */
+    height: 100%;
+
+    cursor: pointer;
+    background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+
+    /* добавляем прозрачность кнопке отправки */
+    opacity: 0.5;
+}
+
+/* при наведении курсора меняем прозрачность кнопки отправки */
+.search .submit:hover {
+    opacity: 0.8;
+}
+
+/* данное свойство необходимо для того, чтобы в браузерах
+** Chrome и Safari можно было стилизовать инпуты */
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+.basket-btn{
+    background: linear-gradient(top, #FA6A2E 0%,#FA6A2E 100%);
+    /*padding-left: 90px;*/
+    /*padding-right: 105px;*/
+    /*height: 90px;*/
+    display: inline-block;
+    /*position: relative;*/
+    border: 1px solid #80ab5d;
+    /*box-shadow:*/
+            /*0px 1px 1px rgba(255,255,255,0.8) inset,*/
+            /*1px 1px 3px rgba(0,0,0,0.2);*/
+    box-shadow:
+            inset 0 0 8px #FA6A2E, inset 0 1px 2px #FA6A2E;
+    border-radius: 8px;
+    font-family: "Calibri";
+    /*float: left;*/
+    /*clear: both;*/
+    /*!*margin: 10px 0px;*!*/
+    /*overflow: hidden;*/
+    transition: box-shadow 0.3s ease-in-out;
+}
+.menu-left{
+    margin: 0;
+    padding: 0;
+    list-style-type: circle;
+    width: 100%;
+    font-family: "Calibri";
+    font-size: 24px;
+}
+.menu-left li {
+    /*border-left: 10px solid #666;*/
+    /*border-bottom: 1px solid #666;*/
+    border-top: 1px solid #666;
+}
+.menu-left a {
+    /*background-color: #949494;*/
+    color: #e1000f;
+    /*color: #FA6A2E;*/
+
+    /*color: #e802e3;*/
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    /*border-left: 5px solid #33ADFF;*/
+    display: block;
+}
+.menu-left a:hover {
+    background: linear-gradient(to right, rgba(250, 106, 46, 0.33), #EEEEEE);
+    border-left: 5px solid #3333FF;
+}
+
+.footer {
+    hight : 300px;
+}
+.filter{
+    text-align: left;
+    alignment: top;
+    border: none; /* Параметры рамки */
+    padding: 5px; /* Поля вокруг текста */
+}
+
+.name_list{
+    text-align: center; /* Выравнивание по левому краю */
+    padding: 5px; /* Поля вокруг текста */
+    color: #1C6EA4;
+    font-family: "Calibri";
+    font-size: 28px;
+}
+
+.content { /* Основное содержание страницы */
+    margin-left: 215px; /* Отступ слева */
+    alignment: top;
+    min-height: 400px;
+    font-family: "Calibri";
+    border: solid 1px #000; /* Параметры рамки */
+}
+
+.product{
+    align: top;
+    text-align: center;
+    alignment: top;
+    align-content: baseline;
+    horiz-align: center;
+}
+.product img{
+    width: 125px;
+    height: 125px;
+    padding: 5px;
+    /*border: solid 1px;*/
+}
+.price{
+    font-family: "Calibri";
+    font-size: 18px;
+}

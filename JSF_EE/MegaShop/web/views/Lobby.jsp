@@ -8,8 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head><title>Title</title>
-    <link rel="stylesheet" href="../styles/b1.css"/>
-    <link rel="stylesheet" href="../styles/s1.css"/>
+    <link rel="stylesheet" href="../styles/page2.css"/>
+    <link rel="stylesheet" href="../styles/button1.css"/>
+    <link rel="stylesheet" href="../styles/table1.css"/>
 
 </head>
 <body>
@@ -60,7 +61,7 @@
 <%--<div class="w3-container w3-grey w3-opacity w3-right-align w3-padding">--%>
     <%--<button class="w3-btn w3-round-large" onclick="location.href='/'">Back to main</button>--%>
 <%--</div>--%>
-<button href="/user_reg" class="a-btn">
+<button action="../user_reg" class="a-btn">
     <span class="a-btn-slide-text">$29</span>
     <img src="../images/Doc.png" alt="Photos" />
     <span class="a-btn-text"><small>Available on the Apple</small> App Store</span>
@@ -79,6 +80,9 @@
     <img src="../images/Doc.png" alt="Photos" />
     <span class="a-btn-text">to Html</span>
     <span class="a-btn-icon-right"><span>
+</a>
+<a href="views/Lobby2.xhtml" class="a-btn">
+    <span class="a-btn-text">to Lobby2</span>
 </a>
 </body>
 

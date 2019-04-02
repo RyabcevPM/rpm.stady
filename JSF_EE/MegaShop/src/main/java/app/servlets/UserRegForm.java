@@ -12,6 +12,7 @@ import java.io.IOException;
 public class UserRegForm extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("UserRegForm.doget");
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/views/RegForm.jsp");
         requestDispatcher.forward(req, resp);
     }
