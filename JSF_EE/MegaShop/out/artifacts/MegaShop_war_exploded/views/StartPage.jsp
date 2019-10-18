@@ -1,122 +1,133 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core"
-      xmlns:p="http://primefaces.org/ui" >
-<f:view>
-    <h:head>
-        <title>PF Title</title>
-    </h:head>
+<%--
+  Created by IntelliJ IDEA.
+  User: rpm
+  Date: 27.03.2019
+  Time: 14:29
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" href="../styles/page1.css"/>
+    <link rel="stylesheet" href="../styles/table1.css"/>
+    <%--<style>  div{border-radius: 10px}  </style>--%>
+</head>
+<body>
+<div class="header">
+    <table width="100%" height="100%" cellspacing="0" cellpadding="4" padding="0px">
+        <tr>
+            <td class="header-logo"><img src="../images/logo.png" alt="Найти подарок - легко!"></td>
+            <td class="header-contact">
+                <ul>
+                    <li><img padding="0px" src="../images/mts.png" height="20px" width="20px"> <a
+                            href="tel:+375295630777">375(29)-56-30-777</a></li>
+                    <li><img padding="0px" src="../images/welcom.png" height="20px" width="20px"> <a
+                            href="tel:+375335630888">375(33)-56-30-888</a></li>
+                    <li><img src="../images/viber.png" height="25px" width="25px"
+                             href="viber://add?number=375295630777"></li>
+                </ul>
+            </td>
+            <td class="header-logo2"><img height="130px" src="../images/logo11.png" alt="Найти подарок - легко!"></td>
+            <td class="header-find">
 
-    <h:body>
-        <h:form>
-    <div class="header">
-        <table width="100%" cellspacing="0" cellpadding="4">
-            <tr>
-                <td class="header-logo"><img src="../images/logo.png" alt="Найти подарок - легко!" ></img></td>
-                <td class="header-contact">
-                    <ul>
-                        <li><img src="../images/mts.png" height="20px" width="20px" alt="xxx" /> <a href="tel:+375295630777">375(29)-56-30-777</a></li>
-                        <li><img src="../images/welcom.png" height="20px" width="20px"  alt="xxx"/> <a href="tel:+375335630888">375(33)-56-30-888</a></li>
-                        <li><img src="../images/viber.png" height="25px" width="25px" alt="xxx" /></li>
-                    </ul>
-                </td>
-                <td class="header-logo2"><img height="130px" src="../images/logo11.png" alt="Найти подарок - легко!" /></td>
-                <td class="header-find">
+                <a class="a-btn-text" href="https://www.google.com/maps/dir/%D0%A2%D0%A6+%D0%9A%D0%BE%D1%80%D0%BE%D0%BD%D0%B0/%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+%D1%82%D1%80%D0%B0%D0%BA%D1%82,+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/53.9372191,27.6729538/@53.9363479,27.6711403,17.5z/data=!4m15!4m14!1m5!1m1!1s0x46dbcec7d60a8e57:0x6fecf48629b72b98!2m2!1d27.6731286!2d53.9368532!1m5!1m1!1s0x46dbcecf65dd9c89:0x57c3d362592f63da!2m2!1d27.6663906!2d53.9384151!1m0!3e2">
+                    <img height="30px" width="25px" src="../images/place_link.png"/>
+                    <span >ТЦ Корона, пр-т Независимости 154, Минск</span>
+                </a>
+                <%--<p></p>--%>
+                <div>
+                <form action="" method="post" class="search">
+                    <input type="search" name="" placeholder="поиск" class="input"/>
+                    <input type="submit" name="" value="" class="submit"/>
+                </form>
+                </div>
+            </td>
+            <td class="header-logo3"><img height="130px" src="../images/logo9.png" alt="Найти подарок - легко!"></td>
+            <th class="header-reg">
+                <form>
+                    <button formaction="user_reg" class="basket-btn">
+                        <img src="../images/basket_empty.png" height="80" alt="Корзина"/>
+                        <span class="a-btn-text">Корзина</span>
+                    </button>
+                </form>
+            </th>
 
-                    <a class="a-btn-text" href="https://www.google.com/maps/dir/%D0%A2%D0%A6+%D0%9A%D0%BE%D1%80%D0%BE%D0%BD%D0%B0/%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+%D1%82%D1%80%D0%B0%D0%BA%D1%82,+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/53.9372191,27.6729538/@53.9363479,27.6711403,17.5z/data=!4m15!4m14!1m5!1m1!1s0x46dbcec7d60a8e57:0x6fecf48629b72b98!2m2!1d27.6731286!2d53.9368532!1m5!1m1!1s0x46dbcecf65dd9c89:0x57c3d362592f63da!2m2!1d27.6663906!2d53.9384151!1m0!3e2">
-                        <img height="30px" width="25px" src="../images/place_link.png" alt="xxx"/>
-                        <span >ТЦ Корона, пр-т Независимости 154, Минск</span>
-                    </a>
-
-                    <div>
-                        <form action="" method="post" class="search">
-                            <input type="text" name="" class="input"/>
-                            <input type="submit" name="" value="" class="submit"/>
-                        </form>
-                    </div>
-                </td>
-                <td class="header-logo3"><img height="130px" src="../images/logo9.png" alt="Найти подарок - легко!" /></td>
-                <th class="header-reg">
-
-                </th>
-
-            </tr>
-        </table>
-    </div>
-    <div class="layout">
-        <div class="sidebar">
-            <h:form>
+        </tr>
+    </table>
+</div>
+<div class="layout">
+    <div class="sidebar">
+        <form>
             <div class="filter">
-                <div class="name_list" >Подарки</div>
-                <p:spinner>ddd</p:spinner>
-                <p:inputNumber id="min_val" value="#{searchFilter.input1}">
-                </p:inputNumber>
+            <div class="name_list" >Подарки</div>
+            <%--<output>Цена от </output>--%>
+            <%--<input type="number" id="min_val" name="min_val" placeholder="цена от" >--%>
+            <%--<input type="number" id="max_val" name="max_val"placeholder="до" >--%>
+            <input type="number" id="min_val" name="min_val"
+                   min="0" max="99999" placeholder="цена от" >
+            <input type="number" id="max_val" name="max_val"
+                   min="0" max="99999" placeholder="до" >
+            <input type="submit" id="Find" value="Найти" formaction="user_reg">
             </div>
-            <input type="submit" id="Find" value="Найти" />
-            </h:form>
-        </div>
-        </div>
-    </h:form>
+        </form>
 
-    <ul class="menu-left">
-        <li><a href="link1.html">Девушке</a></li>
-        <li><a href="link1.html">Парню</a></li>
-        <li><a href="link1.html">Мужу</a></li>
-        <li><a href="link1.html">Жене</a></li>
-        <li><a href="link1.html">Сыну</a></li>
-        <li><a href="link1.html">Дочке</a></li>
-        <li><a href="link1.html">Маме</a></li>
-        <li><a href="link1.html">Папе</a></li>
-        <li><a href="link1.html">Другу</a></li>
-        <li><a href="link1.html">Подруге</a></li>
-        <li><a href="link1.html">Коллеге</a></li>
-        <li><a href="link1.html">Дедушке</a></li>
-        <li><a href="link1.html">Бабушке</a></li>
-    </ul>
+        <ul class="menu-left">
+            <li><a href="link1.html">Девушке</a></li>
+            <li><a href="link1.html">Парню</a></li>
+            <li><a href="link1.html">Мужу</a></li>
+            <li><a href="link1.html">Жене</a></li>
+            <li><a href="link1.html">Сыну</a></li>
+            <li><a href="link1.html">Дочке</a></li>
+            <li><a href="link1.html">Маме</a></li>
+            <li><a href="link1.html">Папе</a></li>
+            <li><a href="link1.html">Другу</a></li>
+            <li><a href="link1.html">Подруге</a></li>
+            <li><a href="link1.html">Коллеге</a></li>
+            <li><a href="link1.html">Дедушке</a></li>
+            <li><a href="link1.html">Бабушке</a></li>
+        </ul>
+    </div>
     <div class="content">
         <table class="main-table">
             <tr>
-                <td class="product"><div> <img src="../images/product/1.jpg"  alt="" /></div><div class="price">47$</div></td>
-                <td class="product"><div> <img src="../images/product/2.jpg" alt="" /></div><div class="price">1$</div></td>
-                <td class="product"><div> <img src="../images/product/3.jpg" alt="" /></div><div class="price">22$</div></td>
-                <td class="product"><div> <img src="../images/product/4.jpg" alt="" /></div><div class="price">3$</div></td>
-                <td class="product"><div> <img src="../images/product/5.jpg" alt="" /></div><div class="price">57$</div></td>
+                <td class="product"><div> <img src="../images/product/1.jpg"></div><div class="price">47$</div></td>
+                <td class="product"><div> <img src="../images/product/2.jpg"></div><div class="price">1$</div></td>
+                <td class="product"><div> <img src="../images/product/3.jpg"></div><div class="price">22$</div></td>
+                <td class="product"><div> <img src="../images/product/4.jpg"></div><div class="price">3$</div></td>
+                <td class="product"><div> <img src="../images/product/5.jpg"></div><div class="price">57$</div></td>
             </tr>
             <tr>
-                <td class="product"><div> <img src="../images/product/5.jpg" alt="" /></div><div class="price">47$</div></td>
-                <td class="product"><div> <img src="../images/product/7.jpg" alt="" /></div><div class="price">1$</div></td>
-                <td class="product"><div> <img src="../images/product/8.jpg" alt="" /></div><div class="price">22$</div></td>
-                <td class="product"><div> <img src="../images/product/9.jpg" alt="" /></div><div class="price">3$</div></td>
-                <td class="product"><div> <img src="../images/product/10.jpg" alt="" /></div><div class="price">57$</div></td>
+                <td class="product"><div> <img src="../images/product/5.jpg"></div><div class="price">47$</div></td>
+                <td class="product"><div> <img src="../images/product/7.jpg"></div><div class="price">1$</div></td>
+                <td class="product"><div> <img src="../images/product/8.jpg"></div><div class="price">22$</div></td>
+                <td class="product"><div> <img src="../images/product/9.jpg"></div><div class="price">3$</div></td>
+                <td class="product"><div> <img src="../images/product/10.jpg"></div><div class="price">57$</div></td>
             </tr>
             <tr>
-                <td class="product"><div> <img src="../images/product/11.jpg" alt="" /></div><div class="price">47$</div></td>
-                <td class="product"><div> <img src="../images/product/12.jpg" alt="" /></div><div class="price">1$</div></td>
-                <td class="product"><div> <img src="../images/product/13.jpg" alt="" /></div><div class="price">22$</div></td>
-                <td class="product"><div> <img src="../images/product/14.jpg" alt="" /></div><div class="price">3$</div></td>
-                <td class="product"><div> <img src="../images/product/15.jpg" alt="" /></div><div class="price">57$</div></td>
+                <td class="product"><div> <img src="../images/product/11.jpg"></div><div class="price">47$</div></td>
+                <td class="product"><div> <img src="../images/product/12.jpg"></div><div class="price">1$</div></td>
+                <td class="product"><div> <img src="../images/product/13.jpg"></div><div class="price">22$</div></td>
+                <td class="product"><div> <img src="../images/product/14.jpg"></div><div class="price">3$</div></td>
+                <td class="product"><div> <img src="../images/product/15.jpg"></div><div class="price">57$</div></td>
             </tr>
             <tr>
-                <td class="product"><div> <img src="../images/product/16.jpg" alt="" /></div><div class="price">47$</div></td>
-                <td class="product"><div> <img src="../images/product/17.jpg" alt="" /></div><div class="price">1$</div></td>
-                <td class="product"><div> <img src="../images/product/18.jpg" alt="" /></div><div class="price">22$</div></td>
-                <td class="product"><div> <img src="../images/product/19.jpg" alt="" /></div><div class="price">3$</div></td>
-                <td class="product"><div> <img src="../images/product/20.jpg" alt="" /></div><div class="price">57$</div></td>
+                <td class="product"><div> <img src="../images/product/16.jpg"></div><div class="price">47$</div></td>
+                <td class="product"><div> <img src="../images/product/17.jpg"></div><div class="price">1$</div></td>
+                <td class="product"><div> <img src="../images/product/18.jpg"></div><div class="price">22$</div></td>
+                <td class="product"><div> <img src="../images/product/19.jpg"></div><div class="price">3$</div></td>
+                <td class="product"><div> <img src="../images/product/20.jpg"></div><div class="price">57$</div></td>
             </tr>
             <tr>
-                <td class="product"><div> <img src="../images/product/21.jpg" alt="" /></div><div class="price">47$</div></td>
-                <td class="product"><div> <img src="../images/product/22.jpg" alt="" /></div><div class="price">1$</div></td>
-                <td class="product"><div> <img src="../images/product/23.jpg" alt="" /></div><div class="price">22$</div></td>
-                <td class="product"><div> <img src="../images/product/24.jpg" alt="" /></div><div class="price">3$</div></td>
-                <td class="product"><div> <img src="../images/product/25.jpg" alt="" /></div><div class="price">57$</div></td>
+                <td class="product"><div> <img src="../images/product/21.jpg"></div><div class="price">47$</div></td>
+                <td class="product"><div> <img src="../images/product/22.jpg"></div><div class="price">1$</div></td>
+                <td class="product"><div> <img src="../images/product/23.jpg"></div><div class="price">22$</div></td>
+                <td class="product"><div> <img src="../images/product/24.jpg"></div><div class="price">3$</div></td>
+                <td class="product"><div> <img src="../images/product/25.jpg"></div><div class="price">57$</div></td>
             </tr>
         </table>
     </div>
-
+</div>
 <div class="footer">
     <h2>Милости просим в нашем интернет магазине интересных подарков и хорошего настроения.</h2>
     <p><a href="http://localhost:8080">Магазин подарков для всех</a>.</p>
@@ -148,7 +159,5 @@
 
     <p>Каждый предмет, будь то подарок на юбилей или подарок другу или милая безделушка на стол в офис, прикольные подарки для мужчин или дизайнерские штучки, наделены некой энергией положительного настроения: доброй, созидательной, абсолютно позитивной. Такое же настроение они приносят в дом, где будут находиться после.</p>
 </div>
-
-        </h:body>
-        </f:view>
-        </html>
+</body>
+</html>

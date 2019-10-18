@@ -8,12 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/user_reg")
-public class UserRegForm extends HttpServlet {
+@WebServlet("/to_pf")
+public class PrimeExapmle extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("UserRegForm.doget");
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/views/pe3.xhtml");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/views/Lobby.xhtml");
         requestDispatcher.forward(req, resp);
     }
 }
