@@ -16,10 +16,6 @@
             <to-view-id>/views/StartPage.jsp</to-view-id>
         </navigation-case>
 
-        <navigation-case>
-            <from-outcome>to_jsp_prime</from-outcome>
-            <to-view-id>/views/Lobby2.xhtml</to-view-id>
-        </navigation-case>
 
     </navigation-rule>
 

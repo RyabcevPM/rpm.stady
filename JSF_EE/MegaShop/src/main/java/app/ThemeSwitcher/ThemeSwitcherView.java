@@ -17,6 +17,7 @@ public class ThemeSwitcherView {
     @PostConstruct
     public void init() {
         themes = service.getThemes();
+//        setService(new Theme(0, "Nova-Light", "nova-light"));
     }
 
     public List<Theme> getThemes() {
